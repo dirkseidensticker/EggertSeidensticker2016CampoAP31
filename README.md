@@ -1,5 +1,7 @@
 # Supplementary materials for contributions to *M. K. H. Eggert/D. Seidensticker, Campo. Archaeological research at the mouth of the Ntem River (South Cameroon). Africa Praehistorica 31 (Köln 2016).*
 
+[![DOI](https://zenodo.org/badge/110661004.svg)](https://zenodo.org/badge/latestdoi/110661004)
+
 ## Licences:
 
 Code: MIT (http://opensource.org/licenses/MIT year: 2017, copyright holder: Dirk Seidensticker)
