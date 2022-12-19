@@ -1,0 +1,28 @@
+---
+title: "Analyse"
+output: html_document
+date: '2022-06-22'
+---
+
+```{r}
+library(ggplot2)
+```
+
+```{r}
+geochem <- data.table::fread("data/GeochemieDaten.csv")
+names(geochem)
+```
+
+Vergleiche geochemische Daten mit Angabe zu Amazon Dark Earth in Lombardo et al. 2022:
+
+```{r}
+cowplot::plot_grid(
+  ggplot(geochem, aes(x = K, y = Ca)) + 
+    geom_point() + 
+    theme(aspect.ratio = 1),
+  ggplot(geochem, aes(x = `P_mg-g`, y = Ca)) + 
+    geom_point() +
+    theme(aspect.ratio = 1)
+)
+```
+
